@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Order Details</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="img/clothes/pn2.jpg" class="img-fluid" alt="Product Image">
+               
+            </div>
+            <div class="col-md-6">
+                <h2>Gear up for greatness with our Men's Gym</h2>
+                <p class="price">1,090.00EGP</p>
+                <p class="description">rafted for comfort and style! Conquer your workouts and turn heads while you sweat</p>
+                
+                <h5>Select Size:</h5>
+                <div class="d-flex mb-3" id="size-options">
+                    <button class="btn btn-outline-primary me-2" data-size="S">S</button>
+                    <button class="btn btn-outline-primary me-2" data-size="M">M</button>
+                    <button class="btn btn-outline-primary me-2" data-size="L">L</button>
+                    <button class="btn btn-outline-primary" data-size="XL">XL</button>
+                </div>
+                
+                <h5>Your Information:</h5>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="First Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Last Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="phone Number" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Address" required>
+                </div>
+
+                <h5>Payment Options:</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" value="credit" checked>
+                    <label class="form-check-label">Credit Card</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" value="paypal">
+                    <label class="form-check-label">PayPal</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" value="cash">
+                    <label class="form-check-label">Cash on Delivery</label>
+                </div>
+
+                <h5>Shipping Options:</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="shippingMethod" value="standard" checked>
+                    <label class="form-check-label">Standard Shipping (3-5 days)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="shippingMethod" value="express">
+                    <label class="form-check-label">Express Shipping (1-2 days)</label>
+                </div>
+
+                <button class="btn btn-success mt-4">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript to handle size selection
+        const sizeButtons = document.querySelectorAll('#size-options button');
+        
+        sizeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                sizeButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

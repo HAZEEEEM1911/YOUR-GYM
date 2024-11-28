@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Packages</title>
+    <!-- css files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <section class="top">
+        <img src="img/logo.jpeg" alt="">
+        <div class="search_bar">
+            <input type="text" placeholder="search here">
+            <button onclick="search()">search</button>
+            <div class="icons">
+                <a href="search.html" title="Search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="cart.html" title="Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="profile.html" title="Profile">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+     <!-- Navigation Bar -->
+     <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="on_sale.html">ON Sale</a></li>
+            <li><a href="clothes.html">Clothes</a></li>
+            <li><a href="packge.html">Gym Packages</a></li>
+            <li><a href="us.html">Contact us</a></li>
+            
+        </ul>
+    </nav>
+    <section class="gym-packages">
+        <h2>GYM PACKAGES</h2>
+        <button class="toggle-layout-btn" onclick="toggleLayout()">Change Layout</button>
+        <div class="card-container horizontal">
+            <div class="card">
+                <img src="img/o1.jpg" alt="Package 1">
+                <div class="card-body">
+                    <h3>Basic Package</h3>
+                    <p>Perfect for beginners looking to get started.</p>
+                    <span class="price">1,499.70 EGP</span>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/cu2 (1).jpeg" alt="Package 2">
+                <div class="card-body">
+                    <h3>Advanced Package</h3>
+                    <p>Ideal for those wanting to take their fitness further.</p>
+                    <span class="price"> 2,999.70 EGP</span>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/o6.jpg" alt="Package 3">
+                <div class="card-body">
+                    <h3>Premium Package</h3>
+                    <p>Our most popular package for gym enthusiasts.</p>
+                    <span class="price">4,499.70 EGP</span>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/o3.jpg" alt="Package 4">
+                <div class="card-body">
+                    <h3>Ultimate Package</h3>
+                    <p>Comprehensive training with full access to all facilities.</p>
+                    <span class="price">5,999.70 EGP</span>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/o1.jpg" alt="Package 1">
+                <div class="card-body">
+                    <h3>Basic Package</h3>
+                    <p>Perfect for beginners looking to get started.</p>
+                    <span class="price">2,111.70 EGP</span>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/cu2 (1).jpeg" alt="Package 2">
+                <div class="card-body">
+                    <h3>Advanced Package</h3>
+                    <p>Ideal for those wanting to take their fitness further.</p>
+                    <span class="price"> 1,499.70 EGP</span>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/o6.jpg" alt="Package 3">
+                <div class="card-body">
+                    <h3>Premium Package</h3>
+                    <p>Our most popular package for gym enthusiasts.</p>
+                    <span class="price"> 4,499.70 EGP</span>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/o3.jpg" alt="Package 4">
+                <div class="card-body">
+                    <h3>Ultimate Package</h3>
+                    <p>Comprehensive training with full access to all facilities.</p>
+                    <span class="price"> 1,499.70 EGP</span>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Section 1: About the Company -->
+        <div class="footer-section about">
+            <h4>About Us</h4>
+            <p>We offer a wide range of fitness equipment and packages to help you reach your fitness goals. Quality and satisfaction are our top priorities.</p>
+        </div>
+        
+        <!-- Section 2: Quick Links -->
+        <div class="footer-section links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">On Sale</a></li>
+                <li><a href="about.html">Gym Packages</a></li>
+                <li><a href="services.html">Cardio</a></li>
+                <li><a href="contact.html">Financing</a></li>
+                <li><a href="blog.html">Strength</a></li>
+                <li><a href="blog.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- Section 3: Social Media -->
+        <div class="footer-section social">
+            <h4>Follow Us</h4>
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!-- Section 4: Contact Information -->
+        <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@Abo Salah Gym.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Fitness Street, Cairo, Egypt</p>
+        </div>
+    </div>
+    
+    <!-- Bottom Footer: Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Abo Salah Gym | All rights reserved</p>
+    </div>
+</footer>
+
+
+    
+    
+    
+
+    <!-- js fiels -->
+     <script>
+        function toggleLayout() {
+    const container = document.querySelector('.card-container');
+    container.classList.toggle('vertical');
+    window.scrollTo(0, 0); // العودة إلى أعلى الصفحة عند التبديل
+}
+
+     </script>
+    
+    
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
